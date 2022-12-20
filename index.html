@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo List</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="lib/fontawesome/css/all.min.css">
+    <link rel="stylesheet" href="lib/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1 class="mt-4">Todo List</h1>
+        <form id="frmTodo" class="d-flex">
+            <input id="title" class="form-control me-2" type="text" placeholder="what are you going to do?" size="25"
+                required>
+            <button class="btn btn-primary"><i class="fa-solid fa-plus"></i></button>
+        </form>
+        <div id="todos" class="todos"></div>
+        <script src="lib/bootstrap/js/bootstrap.bundle.min.js"></script>
+        <script src="js/index.js"></script>
+    </div>
+</body>
+
+</html>
