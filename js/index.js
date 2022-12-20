@@ -29,13 +29,16 @@ function listTodos() {
         };
         span.textContent = todo.title;
         span.className = "me-auto";
+        if (todo.done)
+            span.classList.add("text-decoration-line-through");
+
         buttonDelete.innerHTML = '<i class="fa-solid fa-remove"></i>';
         buttonDelete.className = "me-2 btn btn-danger";
         buttonDelete.onclick = function () {
             todos.splice(i, 1);
             listTodos();
         };
-        buttonEdit.innerHTML = "&#9998";
+        buttonEdit.innerHTML = '<i class="fa-solid fa-edit"></i>';
         buttonEdit.className = "btn btn-warning";
         buttonEdit.onclick = function () {
             let newTitle = prompt(todo.title);
